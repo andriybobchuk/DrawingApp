@@ -26,8 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:contentDescription="image"
-                android:scaleType="centerCrop"
-                android:src="@drawable/image" />
+                android:scaleType="centerCrop"/>
 
         <com.andriybobchuk.drawingapp.DrawingView
                 android:id="@+id/drawing_view"
@@ -149,6 +148,25 @@
                 android:src="@drawable/ic_gallery" />
 
         <ImageButton
+                android:id="@+id/ib_undo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:contentDescription="image"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_undo" />
+
+        <ImageButton
+                android:id="@+id/ib_redo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:contentDescription="image"
+                android:scaleType="fitXY"
+                android:rotation="180"
+                android:src="@drawable/ic_undo" />
+
+        <ImageButton
                 android:id="@+id/ib_brush"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
@@ -156,6 +174,15 @@
                 android:contentDescription="image"
                 android:scaleType="fitXY"
                 android:src="@drawable/ic_brush" />
+
+        <ImageButton
+                android:id="@+id/ib_save"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="image"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_save" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

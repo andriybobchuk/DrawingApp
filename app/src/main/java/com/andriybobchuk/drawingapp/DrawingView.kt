@@ -6,6 +6,7 @@ import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.MotionEvent
 import android.view.View
+import android.widget.Toast
 
 class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) {
 
@@ -17,11 +18,38 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
     private var color = Color.BLACK
     private var canvas: Canvas? = null
     private val mPaths = ArrayList<CustomPath>() // final but you still can add/remove elements
+    private val mUndoPaths = ArrayList<CustomPath>() // Undo
+
 
     // Kotlin way of OnCreate for classes
     init {
         setUpDrawing()
     }
+
+    /**
+     * =============================================================================================================
+     *                           UNDO-REDO PING-PONG (begin)
+     * =============================================================================================================
+     */
+    fun onClickUndo() {
+        if(mPaths.size > 0) {
+            mUndoPaths.add(mPaths.removeAt(mPaths.size - 1))
+            invalidate()
+        }
+    }
+
+    fun onClickRedo() {
+        if(mUndoPaths.size > 0) {
+            mPaths.add(mUndoPaths.removeAt(mUndoPaths.size - 1))
+            //(mPaths.add(mUndoPaths[mUndoPaths.size - 1]))
+            invalidate()
+        }
+    }
+    /**
+     * =============================================================================================================
+     *                           UNDO-REDO PING-PONG (end)
+     * =============================================================================================================
+     */
 
     private fun setUpDrawing() {
         mDrawPaint = Paint()
