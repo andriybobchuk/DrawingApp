@@ -15,4 +15,9 @@
     <color name="yellow">#ffff00</color>
     <color name="lollipop"> #35a79c</color>
     <color name="random">#A349B1</color>
+
+
+    <color name="textColor">#111F2D</color>
+    <color name="backgroundColor">#ebebf0</color>
+    <color name="coffeeWhiteColor">#F9F9F9</color>
 </resources>
