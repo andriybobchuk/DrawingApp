@@ -38,6 +38,11 @@ class DrawingActivity : AppCompatActivity() {
 
         drawing_view.setSizeForBrush(20.toFloat())
 
+        if(intent.getIntExtra(Constants.BLUEPRINT_BACKGROUND_ID, 33) != -1) {
+            iv_background.setImageResource(intent.getIntExtra(Constants.BLUEPRINT_BACKGROUND_ID, 33))
+        }
+
+
         /**
          * This is to select the default Image button which is
          * active and color is already defined in the drawing view class.
@@ -440,3 +445,5 @@ class DrawingActivity : AppCompatActivity() {
     }
 
 }
+
+

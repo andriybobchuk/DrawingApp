@@ -23,8 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:contentDescription="image"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_character_one"/>
+                android:scaleType="fitCenter"/>
 
         <com.andriybobchuk.drawingapp.DrawingView
                 android:id="@+id/drawing_view"
@@ -156,7 +155,8 @@
                 android:contentDescription="image"
                 android:scaleType="fitXY"
                 android:background="@color/white"
-                android:src="@drawable/ic_gallery" />
+                android:src="@drawable/ic_gallery"
+                android:visibility="gone"/>
 
         <ImageButton
                 android:id="@+id/ib_undo"
@@ -167,6 +167,7 @@
                 android:scaleType="fitXY"
                 android:alpha="0.7"
                 android:background="@color/white"
+                android:layout_marginLeft="10dp"
                 android:src="@drawable/ic_undo" />
 
         <ImageButton
@@ -178,6 +179,7 @@
                 android:scaleType="fitXY"
                 android:alpha="0.7"
                 android:background="@color/white"
+                android:layout_marginLeft="10dp"
                 android:src="@drawable/ic_redo" />
 
         <ImageButton
@@ -189,6 +191,7 @@
                 android:scaleType="fitXY"
                 android:alpha="0.7"
                 android:background="@color/white"
+                android:layout_marginLeft="10dp"
                 android:src="@drawable/ic_brush" />
 
         <ImageButton
@@ -199,7 +202,18 @@
                 android:scaleType="fitXY"
                 android:alpha="0.7"
                 android:background="@color/white"
+                android:layout_marginLeft="10dp"
                 android:src="@drawable/ic_save" />
+        <ImageButton
+                android:id="@+id/ib_share"
+                android:layout_width="@dimen/tool_bar_elements"
+                android:layout_height="@dimen/tool_bar_elements"
+                android:contentDescription="image"
+                android:scaleType="fitXY"
+                android:alpha="0.7"
+                android:background="@color/white"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_share" />
 
     </LinearLayout>
 

@@ -18,7 +18,7 @@
     <TextView
             android:text="Andrii"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView2"
+            android:layout_height="wrap_content" android:id="@+id/tv_name"
             android:textSize="31sp" android:textColor="@color/textColor"
             android:layout_marginTop="21dp"
             app:layout_constraintStart_toEndOf="@+id/textView" android:fontFamily="sans-serif-medium"
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/ll_btn_empty_page"
             tools:layout_editor_absoluteX="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:paddingTop="13dp"
@@ -54,13 +54,13 @@
                 <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="250dp" app:srcCompat="@drawable/card_1"
-                        android:id="@+id/imageButton"
+                        android:id="@+id/ib_card_1"
                         android:layout_weight="1" android:scaleType="fitCenter"
                         android:background="@android:color/transparent"/>
                 <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="250dp" app:srcCompat="@drawable/card_2"
-                        android:id="@+id/imageButton2"
+                        android:id="@+id/ib_card_2"
                         android:layout_weight="1" android:scaleType="fitCenter"
                         android:background="@android:color/transparent"/>
             </LinearLayout>
@@ -72,13 +72,13 @@
                 <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="250dp" app:srcCompat="@drawable/card_3"
-                        android:id="@+id/imageButton131"
+                        android:id="@+id/ib_card_3"
                         android:layout_weight="1" android:scaleType="fitCenter"
                         android:background="@android:color/transparent"/>
                 <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="250dp" app:srcCompat="@drawable/card_4"
-                        android:id="@+id/imageButton223"
+                        android:id="@+id/ib_card_4"
                         android:layout_weight="1" android:scaleType="fitCenter"
                         android:background="@android:color/transparent"/>
             </LinearLayout>
@@ -90,13 +90,13 @@
                 <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="250dp" app:srcCompat="@drawable/card_5"
-                        android:id="@+id/imageButton1231"
+                        android:id="@+id/ib_card_5"
                         android:layout_weight="1" android:scaleType="fitCenter"
                         android:background="@android:color/transparent"/>
                 <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="250dp" app:srcCompat="@drawable/card_6"
-                        android:id="@+id/imageButton292"
+                        android:id="@+id/ib_card_6"
                         android:layout_weight="1" android:scaleType="fitCenter"
                         android:background="@android:color/transparent"/>
             </LinearLayout>
@@ -108,13 +108,13 @@
                 <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="250dp" app:srcCompat="@drawable/card_7"
-                        android:id="@+id/imageButton1431"
+                        android:id="@+id/ib_card_7"
                         android:layout_weight="1" android:scaleType="fitCenter"
                         android:background="@android:color/transparent"/>
                 <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="250dp" app:srcCompat="@drawable/card_8"
-                        android:id="@+id/imageButton2562"
+                        android:id="@+id/ib_card_8"
                         android:layout_weight="1" android:scaleType="fitCenter"
                         android:background="@android:color/transparent"/>
             </LinearLayout>
@@ -126,13 +126,13 @@
                 <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="250dp" app:srcCompat="@drawable/card_9"
-                        android:id="@+id/imageButton11"
+                        android:id="@+id/ib_card_9"
                         android:layout_weight="1" android:scaleType="fitCenter"
                         android:background="@android:color/transparent"/>
                 <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="250dp" app:srcCompat="@drawable/card_10"
-                        android:id="@+id/imageButton22"
+                        android:id="@+id/ib_card_10"
                         android:layout_weight="1" android:scaleType="fitCenter"
                         android:background="@android:color/transparent"/>
             </LinearLayout>
@@ -140,12 +140,12 @@
         </LinearLayout>
     </ScrollView>
     <LinearLayout
+            android:id="@+id/ll_btn_empty_page"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             tools:layout_editor_absoluteX="319dp"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
-            android:id="@+id/linearLayout"
             android:background="@drawable/button_rectangle"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="60dp"

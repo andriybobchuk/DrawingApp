@@ -17,7 +17,7 @@
     <style name="NoActionBarTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#1965A7</item>
-        <item name="colorPrimaryVariant">#d7d7e0</item>
+        <item name="colorPrimaryVariant">#00000000</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
